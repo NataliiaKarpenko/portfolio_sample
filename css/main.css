@@ -428,6 +428,7 @@ h3 {
   padding: 2rem 1rem;
   display: grid;
   visibility: hidden;
+  place-items: center;
   opacity: 0;
   transition: 0.4s;
   z-index: var(--z-modal);
@@ -483,6 +484,11 @@ h3 {
   font-size: 1.5rem;
   color: var(--first-color);
   cursor: pointer;
+}
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 .work__container {
@@ -945,11 +951,11 @@ body.light-theme {
     margin-bottom: 2.5rem;
   }
   .skills__container {
-    grid-template-columns: repeat(2, 350rem);
+    grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;
   }
   .services__container {
-    grid-template-columns: repeat(3, 192rem);
+    grid-template-columns: repeat(3, 192px);
     column-gap: 3rem;
   }
   .services__card {

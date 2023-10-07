@@ -1,10 +1,11 @@
 .services__modal {
   position: fixed;
   inset: 0;
-  background-color: hsla(219, 28%, 16, 0.7);
+  background-color: hsla(219, 28%, 16%, 0.7);
   padding: 2rem 1rem;
   display: grid;
   visibility: hidden;
+  place-items: center;
   opacity: 0;
   transition: 0.4s;
   z-index: var(--z-modal);
@@ -61,4 +62,9 @@
   font-size: 1.5rem;
   color: var(--first-color);
   cursor: pointer;
+}
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
 }
